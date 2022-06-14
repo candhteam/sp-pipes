@@ -1,0 +1,13 @@
+*{
+    box-sizing: border-box;
+    &:focus{
+        outline: none;
+    }
+    &:hover{
+        outline: none;
+    }
+}
+body{
+    margin: 0;
+    padding: 0;
+}
