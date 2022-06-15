@@ -1,13 +1,60 @@
-*{
+* {
     box-sizing: border-box;
-    &:focus{
-        outline: none;
-    }
-    &:hover{
-        outline: none;
-    }
-}
-body{
     margin: 0;
     padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-1;
+}
+
+.container-alpha {
+    max-width: 1800px;
+    margin: 0 auto;
+    padding-left: 100px;
+    padding-right: 100px;
+
+    @media (max-width: $media-xlg) {
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+
+    @media (max-width: $media-lg) {
+        padding-left: 60px;
+        padding-right: 60px;
+    }
+
+    @media (max-width: $media-md) {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    @media (max-width: $media-xs) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+}
+
+img,
+video {
+    display: block;
+    max-width: 100%;
+}
+
+p {
+    color: $primary;
+    //letter-spacing: 0px;
+    font-size: 30px;
+    line-height: 45px;
+    // margin-bottom: 30px;
+
+    @media (max-width: $media-xs) {
+        font-size: 16px;
+    }
+}
+
+a {
+    text-decoration: none;
 }

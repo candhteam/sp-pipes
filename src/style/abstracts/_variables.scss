@@ -10,14 +10,19 @@ $media-xs: 544px; //34em
 
 
 //fonts
-// $font-1: ;
+$font-1: Articulat CF,
+sans-serif;
 // $font-2: ;
 
 //colors
-
+$primary: #415465;
+$white: #fff;
+$black: #000;
+$border: #90A0AF;
 
 //weights
-// $light:300;
-// $regular:400;
-// $semi-bold:600;
-// $bold:700;
+//$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;

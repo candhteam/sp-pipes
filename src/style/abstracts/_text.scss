@@ -1,0 +1,27 @@
+h1 {
+    color: $white;
+    font-family: $font-1;
+    font-weight: $regular;
+    font-size: 75px;
+    line-height: 85px;
+    text-transform: lowercase;
+    letter-spacing: 0;
+    text-align: left;
+    margin-bottom: 0;
+}
+
+h2 {
+    color: $primary;
+    font-family: $font-1;
+    font-size: 38px;
+    line-height: 45px;
+    font-weight: $medium;
+    margin-bottom: 0;
+}
+
+h3 {
+    font-family: $font-1;
+    color: $primary;
+    font-size: 38px;
+    line-height: 45px;
+}
