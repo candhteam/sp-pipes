@@ -43,17 +43,6 @@ video {
     max-width: 100%;
 }
 
-p {
-    color: $primary;
-    //letter-spacing: 0px;
-    font-size: 30px;
-    line-height: 45px;
-    // margin-bottom: 30px;
-
-    @media (max-width: $media-xs) {
-        font-size: 16px;
-    }
-}
 
 a {
     text-decoration: none;
