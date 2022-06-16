@@ -1,0 +1,157 @@
+
+.manufacture_section{
+
+    height:auto;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 32%, #c6d9eb 100%) 0% 0% no-repeat padding-box;
+    
+        .manufacture_main-block{
+            padding-top:137px;
+
+            .manufacture_main-block_sub-1{
+                h2{
+                    @include subtext ;
+                }
+               
+            }
+            .main_block_sub2-img{
+                display:grid;
+                grid-template-columns: repeat(5,1fr);
+                gap:30px;
+
+                .manufacture_main-block_sub-2{
+                
+                    border:1px solid $border;
+                    width: 248px;
+                    height: 300px;
+
+                    h4{
+                        text-align: center;
+                        color: $primary;
+                        font-size: 16px;
+                        font-family:  $font-1;
+                        font-weight: $semi-bold;
+                        
+                    }
+                    
+    
+                }
+                    
+
+            }
+
+            
+
+        }
+        .maintainance_block{
+            padding-top: 197px;
+            padding-bottom: 189px;
+            .maintainance_block-1{
+
+                h2{
+                    @include subtext ;
+                }
+
+            }
+            .maintainance_block-2{
+                display: grid;
+                gap:30px;
+                grid-template-columns: repeat(4,.1fr);
+                .maintainance_block-2_element-1{
+
+                    @include maintainace_block-element;
+                    display:flex;
+                    border:2px solid #0A2C4A;
+                    h4{
+                        @include element-h4;
+                    }
+                    
+                }
+                .maintainance_block-2_element-2{
+
+                    @include maintainace_block-element;
+                    background-color: #0A2C4A;
+
+                    h4{
+                        @include element-h4;
+                        color:$white;
+                    }
+                    
+                }
+
+                
+            }
+        }
+
+    
+}
+
+
+// media query///////
+
+@media(max-width: $media-lg){
+    .manufacture_section{
+        height:auto;
+        .manufacture_main-block{
+
+            .main_block_sub2-img{
+
+                display:grid;
+                grid-template-columns: repeat(3,1fr);
+                
+            }
+        }
+}
+
+}
+@media(max-width: $media-sm){
+    .manufacture_section{
+        height:auto;
+        .manufacture_main-block{
+            .main_block_sub2-img{
+                display:grid;
+                grid-template-columns: repeat(2,.1fr);
+                gap:30px;
+    
+            }
+        
+    }
+    .maintainance_block{
+        .maintainance_block-2{
+            display: grid;
+            gap:30px;
+            grid-template-columns: repeat(2,.1fr);
+
+        }
+
+    }
+
+}
+
+}
+@media(max-width: $media-xs){
+    .manufacture_section{
+        height:auto;
+        .manufacture_main-block{
+
+            .main_block_sub2-img{
+                display:grid;
+                grid-template-columns: repeat(2,1fr);
+                gap:15px;
+    
+        }
+    }
+    .maintainance_block{
+        .maintainance_block-2{
+            display: grid;
+            gap:10px;
+            grid-template-columns: repeat(2,.1fr);
+
+        }
+
+    }
+
+    
+    
+}
+}
+

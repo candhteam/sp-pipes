@@ -43,18 +43,38 @@ video {
     max-width: 100%;
 }
 
-p {
-    color: $primary;
-    //letter-spacing: 0px;
-    font-size: 30px;
-    line-height: 45px;
-    // margin-bottom: 30px;
 
-    @media (max-width: $media-xs) {
-        font-size: 16px;
-    }
-}
 
 a {
     text-decoration: none;
+}
+@mixin subtext {
+    font-weight: $medium;
+    letter-spacing: 0px;
+    color: #0A2C4A;
+    opacity: 1;
+    font-family: $font-1;
+    font-size: 38px;
+    padding-bottom: 20px;
+    
+}
+@mixin maintainace_block-element{
+                    width: 248px;
+                    height: 139px;
+                    display:flex;
+                    text-align: left;
+                    justify-content: center;
+                    text-align: center;
+                    border-radius: 5px;
+                    padding:30px 50px 30px 50px
+}
+@mixin element-h4{
+    text-align: left;
+font-weight: normal;
+font-family:$font-1;
+font-size: 18px;
+letter-spacing: 0px;
+color: #0A2C4A;
+
+
 }
