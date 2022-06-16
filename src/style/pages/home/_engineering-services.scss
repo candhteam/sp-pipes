@@ -1,0 +1,22 @@
+.banner-engineering-services {
+    width: 100%;
+    height: auto;
+
+    .engineering_services-heading {
+        h2 {
+            @include header3;
+            text-align: center;
+            font-weight: bold;
+
+        }
+    }
+
+    .engineering_services-image--sliding {
+        .engineering_services-image--grid {
+            .image_slider_arrow {
+                h6 {}
+
+            }
+        }
+    }
+}

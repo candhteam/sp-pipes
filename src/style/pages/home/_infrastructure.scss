@@ -1,0 +1,104 @@
+.banner-Infrastructure {
+    width: 100%;
+    height: auto;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 32%, #d9dde1 100%) 0% 0% no-repeat padding-box;
+
+
+    .container-alpha {
+        .infrastructure_heading_paragrapg {
+            width: 100%;
+            padding-top: 162px;
+
+            h3 {
+                @include header3;
+            }
+
+            p {
+                @include paragraph-style;
+                width: 680px;
+                height: 211px;
+
+            }
+        }
+
+        .picture_capacity_process_facility {
+            padding-top: 73px;
+            display: flex;
+            justify-content: space-between;
+
+            .picture-capacity--grid {
+                display: grid;
+                justify-content: space-between;
+
+                .capacity-header_arrow {
+                    @include arrow-styling;
+
+
+                    h6 {
+
+                        padding-left: 30px;
+                        font: normal normal bold 18px/45px Articulat CF;
+                        letter-spacing: 0px;
+                        color: #0A2C4A;
+
+                    }
+
+                    a {
+                        .capacity__image--size {
+                            padding-right: 30px;
+
+                        }
+                    }
+
+                }
+            }
+        }
+
+        .industries_heading_discription__svgs {
+            padding-top: 212px;
+            padding-bottom: 155px;
+
+            .industries_heading_and__discription {
+                h3 {
+                    @include header3;
+                }
+
+                p {
+                    @include paragraph-style;
+                    font-size: 18px;
+                    padding-top: 12px;
+
+                }
+
+            }
+
+            .industries__svgs_discription {
+                padding-top: 34px;
+                display: flex;
+                justify-content: space-between;
+
+                .automotive--flex {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    justify-content: space-around;
+                    width: 248px;
+                    height: 107px;
+                    background-color: #FFFFFF;
+                    align-items: center;
+                    text-align: -webkit-center;
+
+
+                    p {
+                        @include paragraph-style;
+                        font-size: 16px;
+                        text-align: left;
+                        font-weight: bold;
+
+                    }
+                }
+            }
+        }
+
+
+    }
+}

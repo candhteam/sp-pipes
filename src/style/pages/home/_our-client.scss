@@ -1,0 +1,26 @@
+.banner-our_client {
+    width: 100%;
+    height: auto;
+
+    .container-alpha {
+        .our_client-heading--center {
+            padding-top: 94px;
+
+            h5 {
+                @include header3;
+                font-size: 25px;
+
+            }
+
+        }
+
+        .our_clients-list--flex {
+            padding-bottom: 142px;
+            padding-top: 45px;
+            display: flex;
+            justify-content: space-between;
+
+
+        }
+    }
+}
