@@ -1,0 +1,107 @@
+.section-layoutblock {
+    background: transparent linear-gradient(180deg, #ADB7BF 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+
+    .block-herocontainer {
+        padding-top: 195px;
+        padding-bottom: 150px;
+        display: flex;
+        align-items: center;
+        gap: 95px;
+
+        @media(max-width:$media-lg) {
+            padding-top: 60px;
+            padding-bottom: 120px;
+            gap: 45px;
+        }
+
+        @media(max-width:$media-sm) {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .herocontainer {
+            &.left-block {
+                .circle {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 386px;
+                    height: 386px;
+                    background-color: $white;
+                    border-radius: 50%;
+
+                    @media(max-width:$media-xlg) {
+                        width: 350px;
+                        height: 350px;
+                        border-radius: 50%;
+                    }
+
+                    @media(max-width:$media-lg) {
+                        width: 320px;
+                        height: 320px;
+                    }
+
+                    @media(max-width:$media-sm) {
+                        width: 200px;
+                        height: 200px;
+
+                    }
+
+                    img {
+                        border-radius: 50%;
+
+                        @media(max-width:$media-sm) {
+                            width: 160px;
+                        }
+                    }
+
+                }
+            }
+
+            &.right-block {
+                width: 758px;
+
+                p {
+                    color: $secondary;
+                    font-family: $font-1;
+                    font-weight: $medium;
+                    font-size: 35px;
+                    line-height: 45px;
+                    padding-bottom: 43px;
+
+
+                    @media(max-width:$media-lg) {
+                        font-size: 25px;
+                        line-height: 35px;
+                        padding-bottom: 25px;
+                    }
+
+
+                }
+
+
+
+                a {
+
+                    color: $secondary;
+                    font-weight: $medium;
+                    font-size: 26px;
+                    line-height: 36px;
+                    white-space: nowrap;
+
+                    &::after {
+                        content: "";
+                        width: 17%;
+                        display: block;
+                        height: 1px;
+                        background-color: $primary;
+                    }
+                }
+
+                @media(max-width:$media-sm) {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

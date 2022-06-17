@@ -1,0 +1,197 @@
+footer {
+
+    //border-top: 2px solid #CACED5;
+    padding-top: 115px;
+
+    background-color: $secondary;
+
+    article {
+        position: relative;
+
+        .grid {
+            display: flex;
+            // grid-template-columns: repeat(4, 270px);
+            // gap: 214px;
+            padding-bottom: 97px;
+            justify-content: space-between;
+
+            @media(max-width:$media-lg) {
+                gap: 70px;
+            }
+        }
+
+        .footer-communication {
+            .footer-logo {
+                display: flex;
+
+                .footerlogo-link {
+                    .footerlogo {
+                        width: 100%;
+                        max-width: 250px;
+                    }
+
+                    p {
+                        color: $white;
+                        font-family: $font-1;
+                        font-weight: $semi-bold;
+                        font-size: 20px;
+                        line-height: 30px;
+                        white-space: nowrap;
+                        text-align: center;
+                        margin-left: 52px;
+                        padding-top: 10px;
+
+                        // @media(max-width:$media-lg) {
+                        //     margin-left: 0;
+                        // }
+                    }
+                }
+            }
+        }
+
+        .footer-container {
+            display: grid;
+            grid-template-columns: repeat(3, 0.65fr);
+            justify-content: space-between;
+            gap: 200px;
+
+
+            @media(max-width:$media-xlg) {
+                gap: 100px
+            }
+
+            @media(max-width:$media-lg) {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 40px;
+            }
+
+            .footer-heading-block {
+                h2 {
+                    color: $white;
+                    font-family: $font-1;
+                    font-weight: $semi-bold;
+                    font-size: 16px;
+                    line-height: 26px;
+                }
+
+                .footer-menus {
+                    padding-top: 12px;
+
+                    .footer-links {
+                        list-style: none;
+
+                        a {
+                            color: #99ABBA;
+                            font-family: $font-1;
+                            font-size: 15px;
+                            line-height: 30px;
+                            font-weight: $regular;
+                            transition: 0.3s ease;
+
+                            &:hover {
+                                color: $white;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .tailend {
+        padding-bottom: 110px;
+        color: #99ABBA;
+
+        .tailend-container {
+            display: flex;
+            justify-content: space-between;
+
+            @media(max-width:$media-lg) {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+
+            .tailend-leftblock {
+                display: flex;
+                align-items: center;
+                gap: 190px;
+
+                @media(max-width:$media-xlg) {
+                    gap: 150px;
+                }
+
+                @media(max-width:$media-lg) {
+                    gap: 50px;
+                }
+
+                .copyrightsblock {
+                    p {
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-weight: $regular;
+                    }
+                }
+
+                .termsandconditions {
+                    display: flex;
+                    gap: 100px;
+                    justify-content: space-around;
+
+                    a {
+                        color: #99ABBA;
+                        transition: 0.3s ease;
+
+                        &:hover {
+                            color: $white;
+                        }
+                    }
+                }
+
+                .social-media-block {
+                    display: flex;
+                    gap: 10px;
+                }
+            }
+
+            .site-by-block {
+                display: flex;
+                align-items: center;
+
+                p {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: $regular;
+                }
+
+                a {
+                    font-size: 16px;
+                    line-height: 26px;
+                    font-weight: $regular;
+                    color: #99ABBA;
+                    margin-left: 5px;
+                    transition: 0.3s ease;
+
+                    &:hover {
+                        color: $white;
+                    }
+                }
+            }
+        }
+    }
+
+    .uparrow-btn {
+        position: absolute;
+        bottom: 200px;
+        right: 0;
+
+        img {
+            transform: rotate(180deg);
+
+            &:hover {
+                transform: rotate(0deg);
+            }
+        }
+
+    }
+}

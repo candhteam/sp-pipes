@@ -11,14 +11,14 @@ body {
 }
 
 .container-alpha {
-    max-width: 1800px;
+    max-width: 1620px;
     margin: 0 auto;
     padding-left: 100px;
     padding-right: 100px;
 
     @media (max-width: $media-xlg) {
-        padding-left: 80px;
-        padding-right: 80px;
+        // padding-left: 80px;
+        // padding-right: 80px;
     }
 
     @media (max-width: $media-lg) {

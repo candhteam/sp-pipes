@@ -1,0 +1,33 @@
+.main-header {
+
+    &.mobile-active {
+        .mainmenu {
+            .right-menu {
+                .hamburgermenu {
+                    .menu-btn {
+                        .menu-icon {
+                            &::before {
+                                transform: rotate(45deg);
+                            }
+
+                            &::after {
+                                transform: rotate(-45deg);
+                            }
+
+                            .menu-icon__line {
+                                opacity: 0;
+                                visibility: hidden;
+                            }
+                        }
+                    }
+                }
+
+                .nav-menu {
+                    .navlinks {
+                        display: flex;
+                    }
+                }
+            }
+        }
+    }
+}
