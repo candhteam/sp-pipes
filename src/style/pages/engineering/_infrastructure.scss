@@ -1,0 +1,204 @@
+.banner-Infrastructure {
+    width: 100%;
+    height: auto;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 32%, #d9dde1 100%) 0% 0% no-repeat padding-box;
+
+
+    .container-alpha {
+        .infrastructure_heading_paragrapg {
+            width: 100%;
+            padding-top: 162px;
+
+            h3 {
+                // @include header3;
+            }
+
+            p {
+                // @include paragraph-style;
+                width: 680px;
+                height: 211px;
+
+            }
+        }
+
+        .picture_capacity_process_facility {
+            padding-top: 73px;
+            display: flex;
+            justify-content: space-between;
+
+            .picture-capacity--grid {
+                display: grid;
+                justify-content: space-between;
+
+                .capacity-header_arrow {
+                    // @include arrow-styling;
+
+
+                    h6 {
+
+                        // @include h6-subheading;
+
+                    }
+
+
+                    .capacity__image--size {
+                        padding-right: 30px;
+
+                    }
+
+
+                }
+            }
+        }
+
+        .industries_heading_discription__svgs {
+            padding-top: 212px;
+            padding-bottom: 126px;
+
+            .industries_heading_and__discription {
+                h3 {
+                    // @include header3;
+                }
+
+                p {
+                    // @include paragraph-style;
+                    font-size: 18px;
+                    padding-top: 12px;
+
+                }
+
+            }
+
+            .industries__svgs_discription {
+                padding-top: 34px;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                .automotive_svg {
+                    display: grid;
+
+                    .automotive_svg--height {
+                        height: 180px;
+                    }
+
+                    .automotive_svg_caption {
+                        // @include paragraph-style;
+                        font-size: 16px;
+                        text-align: center;
+
+
+                        p {
+                            font-weight: bold;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+
+// media query//
+
+
+
+@media(max-width: $media-lg) {
+    .banner-Infrastructure {
+        .container-alpha {
+
+
+            .picture_capacity_process_facility {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .picture-capacity--grid {
+                    display: grid;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@media(max-width:$media-md) {
+    .banner-Infrastructure {
+        .container-alpha {
+
+
+            .picture_capacity_process_facility {
+
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+                .picture-capacity--grid {
+                    display: grid;
+
+                }
+            }
+
+        }
+
+    }
+}
+
+@media(max-width:$media-sm) {
+    .banner-Infrastructure {
+        .container-alpha {
+
+
+            .picture_capacity_process_facility {
+
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+
+                .picture-capacity--grid {
+                    display: grid;
+
+                }
+            }
+
+            .industries_heading_discription__svgs {
+                .industries__svgs_discription {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 10px;
+
+                    .automotive--flex {}
+                }
+            }
+
+        }
+
+    }
+}
+
+@media(max-width:$media-xs) {
+    .banner-Infrastructure {
+        .container-alpha {
+            .infrastructure_heading_paragrapg {
+                p {
+                    // @include paragraph-style;
+                    width: 500px;
+                    height: auto;
+
+                }
+            }
+
+            .industries_heading_discription__svgs {
+                .industries__svgs_discription {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                    row-gap: 10px;
+                    column-gap: 10px;
+
+                    .automotive--flex {}
+                }
+            }
+        }
+    }
+}
