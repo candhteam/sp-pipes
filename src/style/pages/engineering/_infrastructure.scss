@@ -1,7 +1,8 @@
 .banner-Infrastructure {
     width: 100%;
     height: auto;
-    background: transparent linear-gradient(180deg, #FFFFFF 0%, #FFFFFF 32%, #d9dde1 100%) 0% 0% no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #FFFFFF 0%, #DFE7EE 100%) 0% 0% no-repeat padding-box;
+    opacity: 1;
 
 
     .container-alpha {
@@ -10,33 +11,54 @@
             padding-top: 162px;
 
             h3 {
-                // @include header3;
+                text-align: left;
+                font-weight: $semi-bold;
+                font-family: $font-1;
+                color: $secondary;
+                opacity: 1;
+                font-size: 25px;
+                padding-bottom: 36px;
+
             }
 
             p {
-                // @include paragraph-style;
-                width: 680px;
-                height: 211px;
+                font-size: 20px;
+                font-family: $font-1;
+                color: $secondary;
+                opacity: 1;
+                font-weight: $regular;
+                width: 620px;
+                height: 84px;
 
             }
         }
 
         .picture_capacity_process_facility {
             padding-top: 73px;
-            display: flex;
-            justify-content: space-between;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            column-gap: 5px;
 
             .picture-capacity--grid {
                 display: grid;
                 justify-content: space-between;
 
                 .capacity-header_arrow {
-                    // @include arrow-styling;
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $white;
+                    height: 89px;
+                    align-items: center;
 
 
                     h6 {
 
-                        // @include h6-subheading;
+                        padding-left: 30px;
+                        font-size: 18px;
+                        letter-spacing: 0px;
+                        color: $secondary;
+                        font-family: $font-1;
+                        font-weight: $semi-bold;
 
                     }
 
@@ -57,13 +79,24 @@
 
             .industries_heading_and__discription {
                 h3 {
-                    // @include header3;
+                    text-align: left;
+                    font-weight: $bold;
+                    font-family: $font-1;
+                    color: $secondary;
+                    opacity: 1;
+                    font-size: 30;
+
                 }
 
                 p {
-                    // @include paragraph-style;
-                    font-size: 18px;
+                    font-size: 20px;
+                    font-family: $font-1;
+                    color: $secondary;
+                    opacity: 1;
+                    font-weight: $regular;
                     padding-top: 12px;
+                    width: 415px;
+                    height: 54px;
 
                 }
 
@@ -83,13 +116,17 @@
                     }
 
                     .automotive_svg_caption {
-                        // @include paragraph-style;
+                        font-size: 30px;
+                        font-family: $font-1;
+                        color: $secondary;
+                        opacity: 1;
+                        font-weight: $semi-bold;
                         font-size: 16px;
                         text-align: center;
 
 
                         p {
-                            font-weight: bold;
+                            font-weight: $bold;
                         }
                     }
                 }
@@ -128,7 +165,11 @@
 @media(max-width:$media-md) {
     .banner-Infrastructure {
         .container-alpha {
-
+            .infrastructure_heading_paragrapg {
+                p {
+                    font-size: 20px;
+                }
+            }
 
             .picture_capacity_process_facility {
 
@@ -141,8 +182,51 @@
                 }
             }
 
-        }
+            .industries_heading_discription__svgs {
+                padding-top: 212px;
+                padding-bottom: 126px;
 
+                .industries_heading_and__discription {
+                    h3 {}
+
+                    p {
+                        font-size: 20px;
+                        font-family: $font-1;
+                        color: $secondary;
+                        opacity: 1;
+                        font-weight: $regular;
+                        padding-top: 12px;
+                        width: 415px;
+                        height: 54px;
+
+
+                    }
+
+                }
+
+                .industries__svgs_discription {
+
+                    display: grid;
+                    grid-template-columns: repeat(3, 1fr);
+
+                    .automotive_svg--height {
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                    }
+
+                    row-gap: 50px;
+
+                    .automotive_svg_caption {
+                        display: flex;
+                        align-items: center;
+                    }
+
+
+
+                }
+            }
+        }
     }
 }
 
@@ -159,6 +243,9 @@
                 .picture-capacity--grid {
                     display: grid;
 
+                    .image--zoom {}
+
+                    .capacity-header_arrow {}
                 }
             }
 
@@ -181,20 +268,60 @@
     .banner-Infrastructure {
         .container-alpha {
             .infrastructure_heading_paragrapg {
-                p {
-                    // @include paragraph-style;
-                    width: 500px;
-                    height: auto;
+                h3 {
+                    font-size: 15px;
+                    padding: 0;
+                }
 
+                p {
+                    width: 301px;
+                    height: 73px;
+                    font-size: 13px;
+                    padding-top: 12px;
+                }
+            }
+
+            .picture_capacity_process_facility {
+
+                display: flex;
+                justify-content: space-between;
+
+                .picture-capacity--grid {
+                    display: grid;
+
+                    .image--zoom {
+                        width: 120px;
+                        height: 91px;
+                    }
+
+                    .capacity-header_arrow {
+                        width: 120px;
+                        height: 24px;
+                        display: flex;
+                        justify-content: space-between;
+
+                        h6 {
+
+                            padding: 5px;
+                            font-size: 11px;
+
+                        }
+
+
+                        .capacity__image--size {
+                            padding: 5px;
+
+                        }
+                    }
                 }
             }
 
             .industries_heading_discription__svgs {
                 .industries__svgs_discription {
                     display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    grid-template-columns: repeat(3, 1fr);
                     row-gap: 10px;
-                    column-gap: 10px;
+                    column-gap: 25px;
 
                     .automotive--flex {}
                 }
