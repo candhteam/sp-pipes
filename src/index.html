@@ -29,6 +29,9 @@
 
         <div class="right-menu">
           <div class="nav-menu">
+            <div class="cta-btn">
+              <a href="#" class="cta show-modal js-show-modal" data-modal="1">Business Enquiry</a>
+            </div>
             <div class="hamburgermenu">
               <button class="menu-btn" id="menu-btn">
                 <div class="menu-icon">
@@ -60,8 +63,9 @@
               </li>
 
               <li class="nav-link button">
-                <a href="#" class="nav-link btn">Business Enquiry</a>
+                <a href="#" class="nav-link  show-modal js-show-modal" data-modal="1">Business Enquiry</a>
               </li>
+
             </ul>
           </div>
         </div>
@@ -70,49 +74,153 @@
   </header>
   <!--navbar-->
 
+  <!--form-->
+  <div class="modal-form">
+    <div class="modal js-modal" data-modal="1">
+      <div class="modal__inner">
+        <div class="modal__header">
+          <button class="button-close-modal js-close-modal"><img src="./static/svg/close.svg" class="js-close-modal"
+              alt="close btn"></button>
+        </div>
+        <div class="form-wrapper">
+          <div class="contact-us">
+            <h2>Contact Information</h2>
+            <div class="modal-wrapper">
+              <div class="contact-wrapper">
+                <a href="#" class="mobile-block">
+                  <div class="circle-mob">
+                    <img src="./static/svg/phone.svg" alt="phone">
+                  </div>
+                  <p>+91-44-42031951</p>
+                </a>
 
-  <div class="sitebody">
-    <!--banner-->
-    <section class="home-banner" id="banner">
-      <div class="container-alpha">
-        <div class="content">
-          <article>
-            <h1>Piping future mobility with innovative engineering solution</h1>
-          </article>
-
-          <div class="target">
-            <div class="target-achieved">
-              <div class="grid">
-                <div class="target-num">
-                  <h4>40+</h4>
-                  <p>Years of Group Fluid Handling experience</p>
+                <a href="" class="mobile-block">
+                  <div class="circle-mob">
+                    <img src="./static/svg/mail.svg" alt="email">
+                  </div>
+                  <p>info@sppipe.in</p>
+                </a>
+              </div>
+              <div class="address-container">
+                <div class="address-wrapper">
+                  <p ~class="address-heading">
+                    Corporate Office
+                  </p>
+                  <div class="address-block">
+                    <p>Plot 18-20 Ambit Park Road, <br>
+                      Ambattur Industrial Estate, <br>
+                      Chennai 600 058. India.</p>
+                  </div>
                 </div>
 
-                <div class="target-num">
-                  <h4>1000+</h4>
-                  <p>Parts manufactured</p>
-                </div>
-
-                <div class="target-num">
-                  <h4>200+</h4>
-                  <p>Years of collective expertise</p>
-                </div>
-
-                <div class="target-num">
-                  <h4>8+</h4>
-                  <p>Industrial sectors</p>
+                <div class="address-wrapper">
+                  <p class="address-heading">
+                    Factory
+                  </p>
+                  <div class="address-block">
+                    <p>A-3, SIDCO Phase 1, SIPCOT Industrial<br>
+                      Complex, Hosur – 635126. India. <br></p>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <a href="#section-layoutblock" class="downarrow-link scroll-down" data-target=".featured-products">
-            <img src="./static/svg/down arrow.svg" class="downarrow" alt="downarow">
-          </a>
+          <div class="modal__content">
+            <p class="form-content">Fill-up the form below to send us a message. We will get back to you within 48
+              hours.</p>
+            <form action="">
+              <div class="grid">
+                <div class="left-col">
+                  <div class="form-group">
+                    <label for="name" class="label">Name</label>
+                    <input type="text" id="fname" name="fname" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="number" id="phone" name="phone" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="company">Company Name</label>
+                    <input type="text" id="company" name="company" />
+                  </div>
+                </div>
+
+                <div class="right-col">
+                  <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="industry">Industry</label>
+                    <input type="text" id="industry" name="industry" />
+                  </div>
+
+                  <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" />
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="message">Please describe your project requirements</label>
+                <textarea class="textarea" type="text" id="message" class="message"></textarea>
+              </div>
+              <div class="submit-btn">
+                <input class="submit" type="submit" name="submit" id="submit">
+              </div>
+
+            </form>
+          </div>
         </div>
       </div>
-    </section>
-    <!--banner-->
+    </div>
   </div>
+  <!--form-->
+
+  <!--banner-->
+  <section class="home-banner" id="banner">
+    <div class="container-alpha">
+      <div class="content">
+        <article>
+          <h1>Piping future mobility with innovative engineering solutions</h1>
+        </article>
+
+        <div class="target">
+          <div class="target-achieved">
+            <div class="grid">
+              <div class="target-num">
+                <h4>40+</h4>
+                <p>Years of Group Fluid Handling experience</p>
+              </div>
+
+              <div class="target-num">
+                <h4>1000+</h4>
+                <p>Parts manufactured</p>
+              </div>
+
+              <div class="target-num">
+                <h4>200+</h4>
+                <p>Years of collective expertise</p>
+              </div>
+
+              <div class="target-num">
+                <h4>8+</h4>
+                <p>Industrial sectors</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="downarrow-link scroll-down" data-target=".featured-products">
+          <img src="./static/svg/Arrows/down arrow.svg" class="downarrow" alt="downarow">
+        </a>
+      </div>
+    </div>
+  </section>
+  <!--banner-->
+
   <!--Layoutblock-->
   <section class="section-layoutblock" id="section-layoutblock">
     <div class="container-alpha">
@@ -147,7 +255,7 @@
                 <div class="imgblock">
                   <img src="./static/png/Layer 1.png" class="featuredproduct" alt="featuredproduct">
                 </div>
-                <p>Product name</p>
+                <p>Structural Tubular Products</p>
               </a>
             </div>
 
@@ -156,7 +264,7 @@
                 <div class="imgblock">
                   <img src="./static/png/Layer 1-1.png" class="featuredproduct" alt="featuredproduct">
                 </div>
-                <p>Product name</p>
+                <p>Safety Tubular Structures</p>
               </a>
             </div>
 
@@ -165,7 +273,7 @@
                 <div class="imgblock">
                   <img src="./static/png/Layer 1.png" class="featuredproduct" alt="featuredproduct">
                 </div>
-                <p>Product name</p>
+                <p>Air Brake Pipe</p>
               </a>
             </div>
 
@@ -174,7 +282,7 @@
                 <div class="imgblock">
                   <img src="./static/png/Layer 1-1.png" class="featuredproduct" alt="featuredproduct">
                 </div>
-                <p>Product name</p>
+                <p>Hydraulic Power Steering Pipe</p>
               </a>
             </div>
           </div>
@@ -200,44 +308,52 @@
           <div class="footer-container">
             <div class="footer-channel-menu">
               <div class="footer-heading-block">
+                <h2>Products</h2>
+                <ul class="footer-menus">
+                  <li class="footer-links"><a href="#">HP Hose Assembly</a></li>
+                  <li class="footer-links"><a href="#">Coil Pipe For Air Brakes</a></li>
+                  <li class="footer-links"><a href="#">EPDM Hoses</a></li>
+                  <li class="footer-links"><a href="#">Hydraulic Fittings</a> </li>
+                  <li class="footer-links"><a href="#">Fuel Return Pipe</li></a>
+                  <li class="footer-links"><a href="#">Air Brake Piping </a></li>
+                  <li class="footer-links"><a href="#">Air Brake Pipes</a></li>
+                  <li class="footer-links"><a href="#">High-Pressure Hydraulic Pipes</a></li>
+                  <li class="footer-links"><a href="#">Hydraulic Fittings EPDM Fuel Hose</a></li>
+                </ul>
+
+              </div>
+            </div>
+
+            <div class="footer-channel-menu">
+              <div class="footer-heading-block">
                 <h2>Manufacturing</h2>
                 <ul class="footer-menus">
-                  <li class="footer-links"><a href="#">Structural Tubular Products</a></li>
-                  <li class="footer-links"><a href="#">Safety Tubular Structures</a></li>
-                  <li class="footer-links"><a href="#">Air Brake Pipe</a></li>
-                  <li class="footer-links"><a href="#">Power Steering Pipe</a> </li>
-                  <li class="footer-links"><a href="#">Fuel Return Pipe</li></a>
-                  <li class="footer-links"><a href="#">Hydraulic Fittings & Compression Fittings</a></li>
-                  <li class="footer-links"><a href="#">EPDM Fuel Hoses</a></li>
-                  <li class="footer-links"><a href="#">Exhaust Elbows</a></li>
+                  <li class="footer-links"><a href="#">High-Pressure Crimping Machine</a></li>
+                  <li class="footer-links"><a href="#">High-Pressure Leak Testing Machine</a></li>
+                  <li class="footer-links"><a href="#">Hydrocarbon Flushing Machine</a></li>
+                  <li class="footer-links"><a href="#">5 Axis Bending Machine Induction Brazing Machine</a> </li>
+                  <li class="footer-links"><a href="#">Pipe Design Support</li></a>
+                  <li class="footer-links"><a href="#">Mechanical Lab </a></li>
+                  <li class="footer-links"><a href="#">Milli Pore Testing</a></li>
                 </ul>
               </div>
             </div>
 
             <div class="footer-channel-menu">
               <div class="footer-heading-block">
-                <h2>Engineering Services</h2>
-                <ul class="footer-menus">
-                  <li class="footer-links"><a href="#">Pipe Design Support </a></li>
-                  <li class="footer-links"><a href="#">Bending Tool development</a></li>
-                  <li class="footer-links"><a href="#">Mandrel development</a></li>
-                  <li class="footer-links"><a href="#">Seamless Pipe Sourcing</a> </li>
-                  <li class="footer-links"><a href="#">Furnace Brazing Services</li></a>
-                  <li class="footer-links"><a href="#"> Laser Tube Cutting</a></li>
-                  <li class="footer-links"><a href="#">Speciality Steel Plates</a></li>
-                  <li class="footer-links"><a href="#">Stainless Steel Sheets</a></li>
-                </ul>
-              </div>
-            </div>
-
-            <div class="footer-channel-menu">
-              <div class="footer-heading-block">
-                <h2>Infrastructure</h2>
-                <ul class="footer-menus">
-                  <li class="footer-links"><a href="#">Capacity</a></li>
-                  <li class="footer-links"><a href="#">Process</a></li>
-                  <li class="footer-links"><a href="#">Facility</a></li>
-                </ul>
+                <div class="contact">
+                  <h2>Contact</h2>
+                  <ul class="footer-menus">
+                    <li class="footer-links"><a href="#">+91-44-42031951</a></li>
+                    <li class="footer-links"><a href="#">info@sppipe.in</a></li>
+                  </ul>
+                  <h2 class="office">Corporate Office</h2>
+                  <ul class="footer-menus">
+                    <li class="footer-links"><a href="#">Plot 18-20 Ambit Park Road,</a></li>
+                    <li class="footer-links"><a href="#">Ambattur Industrial Estate,</a></li>
+                    <li class="footer-links"><a href="#"> Chennai 600 058. India.</a></li>
+                  </ul>
+                </div>
               </div>
             </div>
           </div>
@@ -246,15 +362,16 @@
         <div class="tailend">
           <div class="tailend-container">
             <div class="tailend-leftblock">
-              <div class="copyrightsblock">
-                <p>Copyright © 2022 SP Pipe. All rights reserved.</p>
+              <div class="cta-tailend">
+                <div class="copyrightsblock">
+                  <p>Copyright © 2022 SP Pipe. All rights reserved.</p>
+                </div>
+                <div class="termsandconditions">
+                  <p><a href="#">Terms of Use</a></p>
+                  <p><a href="#">Privacy Policy</a></p>
+                </div>
               </div>
-
-              <div class="termsandconditions">
-                <p><a href="#">Terms of Use</a></p>
-                <p><a href="#">Privacy Policy</a></p>
-              </div>
-
+              <!-- 
               <div class="social-media-block">
                 <a href="#">
                   <img src="./static/svg/Linked In.svg" alt="">
@@ -262,7 +379,8 @@
                 <a href="#">
                   <img src="./static/svg/twitter.svg" alt="">
                 </a>
-              </div>
+              </div> -->
+
             </div>
             <div class="site-by-block">
               <p>Site by</p>
@@ -270,8 +388,8 @@
             </div>
           </div>
         </div>
-        <a href="#banner" class="uparrow-btn">
-          <img src="./static/svg/down arrow.svg" alt="uparrow" class="uparrow">
+        <a href="" class="uparrow-btn scroll-top" data-target=".home-banner">
+          <img src="./static/svg/Arrows/down arrow.svg" alt="uparrow" class="uparrow">
         </a>
       </article>
     </div>
