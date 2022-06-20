@@ -10,6 +10,7 @@
         .modal-wrapper {
             @media(max-width:$media-sm) {
                 display: flex;
+                flex-direction: column;
                 justify-content: space-between;
             }
         }
@@ -17,19 +18,25 @@
         .contact-us {
             padding-top: 80px;
             padding-left: 60px;
-            width: 453px;
+            width: 100%;
             background-color: #D2DDE8;
-            border-top-left-radius: 10px;
-            border-bottom-left-radius: 10px;
+            // border-top-left-radius: 10px;
+            // border-bottom-left-radius: 10px;
+            border-radius: 10px;
 
             @media(max-width:$media-sm) {
                 padding-top: 30px;
                 padding-left: 30px;
                 padding-right: 30px;
                 width: 100%;
-                border-top-left-radius: 10px;
-                border-top-right-radius: 10px;
-                border-bottom-left-radius: 0px;
+                height: 100%;
+                border-radius: 10px;
+                // border-top-left-radius: 10px;
+                // border-top-right-radius: 10px;
+                // border-bottom-left-radius: 0px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
             }
 
             h2 {
@@ -80,9 +87,9 @@
             }
 
             .address-container {
-                @media(max-width:$media-sm) {
-                    display: none;
-                }
+                // @media(max-width:$media-sm) {
+                //     display: none;
+                // }
 
                 .address-wrapper {
                     margin-bottom: 40px;
@@ -325,11 +332,15 @@
         transition: all 0.3s ease-in-out;
 
         .modal__inner {
-            max-width: 1234px;
-            height: 836px;
+            max-width: 600px;
+            height: 695px;
             transform: translateY(100%);
             opacity: 0;
             transition: transform 0.5s ease-in-out .1s;
+
+            @media(max-width:$media-sm) {
+                height: 400px;
+            }
         }
 
         &.is-open {
