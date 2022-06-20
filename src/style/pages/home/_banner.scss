@@ -10,13 +10,23 @@
 
 
     @media(max-width: $media-xlg) {
+        height: 100vh;
         background-position: 184% 30%;
         background-size: 850px;
     }
 
     @media(max-width:$media-lg) {
-        background-image: none;
-        height: 110vh;
+        background-position: 240% 30%;
+    }
+
+    @media(max-width: $media-sm) {
+        background-position: 348% 30%;
+        background-size: 620px;
+    }
+
+    @media(max-width:$media-xs) {
+        height: 90vh;
+        background-position: -130% 30%;
     }
 
     .container-alpha {
@@ -30,8 +40,16 @@
             flex-direction: column;
             align-items: flex-start;
 
+            @media(max-width:$media-xs) {
+                justify-content: center;
+            }
+
             article {
                 max-width: 900px;
+
+                @media(max-width:$media-xs) {
+                    margin-bottom: 40px;
+                }
 
                 h1 {
                     color: $white;
@@ -42,15 +60,22 @@
                     letter-spacing: 0;
                     text-align: left;
                     margin-bottom: 0;
-                    padding-top: 120px;
 
-                    @media(max-width:$media-xlg) {
-                        padding-top: 80px;
+
+                    @media(max-width:$media-md) {
+                        max-width: 500px;
                     }
 
-                    @media(max-width: $media-lg) {
-                        font-size: 60px;
-                        line-height: 70px;
+                    @media(max-width:$media-sm) {
+                        font-size: 45px;
+                        line-height: 55px;
+                        max-width: 400px;
+                    }
+
+                    @media(max-width:$media-xs) {
+                        font-size: 35px;
+                        line-height: 45px;
+                        max-width: 280px;
                     }
                 }
             }
@@ -68,7 +93,7 @@
                 }
 
                 @media(max-width:$media-sm) {
-                    width: 450px;
+                    width: 100%;
                 }
 
                 .grid {
@@ -85,8 +110,10 @@
                         gap: 50px;
                     }
 
-                    @media(max-width:$media-sm) {
-                        gap: 30px
+                    @media(max-width:$media-xs) {
+                        margin-top: 18px;
+                        grid-template-columns: repeat(2, 0.5fr);
+                        gap: 20px;
                     }
 
                     .target-num {
@@ -94,8 +121,8 @@
 
                         h4 {
                             color: $white;
-                            font-size: 50px;
-                            line-height: 60px;
+                            font-size: 45px;
+                            line-height: 55px;
                             font-weight: $medium;
                             font-family: $font-1;
 
@@ -103,21 +130,29 @@
                                 font-size: 40px;
                                 line-height: 50px;
                             }
+
+                            @media(max-width: $media-sm) {
+                                font-size: 25px;
+                                line-height: 30px;
+                            }
                         }
 
                         p {
                             color: $white;
                             font-family: $font-1;
-                            font-size: 20px;
-                            line-height: 30px;
+                            font-size: 16px;
+                            line-height: 25px;
+                            font-weight: $regular;
 
                             @media(max-width:$media-xlg) {
                                 font-size: 18px;
                                 line-height: 28px;
                             }
 
-                            @media(max-width: $media-sm) {
+                            @media(max-width: $media-xs) {
                                 white-space: normal;
+                                font-size: 12px;
+                                line-height: 22px;
                             }
                         }
                     }
@@ -128,6 +163,19 @@
                 position: absolute;
                 bottom: 90px;
                 right: 0;
+
+                .downarrow {
+                    width: 60px;
+                    transition: 0.5s ease;
+
+                    &:hover {
+                        transform: rotate(180deg);
+                    }
+                }
+
+                @media(max-width:$media-sm) {
+                    display: none;
+                }
             }
         }
 

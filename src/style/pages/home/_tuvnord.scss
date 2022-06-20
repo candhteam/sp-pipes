@@ -3,19 +3,21 @@
 
     .block-herocontainer {
         padding-top: 195px;
-        padding-bottom: 150px;
         display: flex;
         align-items: center;
         gap: 95px;
 
         @media(max-width:$media-lg) {
             padding-top: 60px;
-            padding-bottom: 120px;
             gap: 45px;
         }
 
         @media(max-width:$media-sm) {
-            flex-direction: column;
+            padding-top: 100px;
+        }
+
+        @media(max-width:$media-xs) {
+            padding-top: 56px;
             align-items: flex-start;
         }
 
@@ -44,6 +46,11 @@
                     @media(max-width:$media-sm) {
                         width: 200px;
                         height: 200px;
+                    }
+
+                    @media(max-width:$media-xs) {
+                        width: 105px;
+                        height: 105px;
 
                     }
 
@@ -51,7 +58,11 @@
                         border-radius: 50%;
 
                         @media(max-width:$media-sm) {
-                            width: 160px;
+                            width: 130px;
+                        }
+
+                        @media(max-width:$media-xs) {
+                            width: 60px;
                         }
                     }
 
@@ -64,7 +75,7 @@
                 p {
                     color: $secondary;
                     font-family: $font-1;
-                    font-weight: $medium;
+                    font-weight: $regular;
                     font-size: 35px;
                     line-height: 45px;
                     padding-bottom: 43px;
@@ -76,30 +87,35 @@
                         padding-bottom: 25px;
                     }
 
+                    @media(max-width:$media-xs) {
+                        padding-bottom: 10px;
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
 
                 }
 
 
 
                 a {
-
+                    display: inline-block;
                     color: $secondary;
-                    font-weight: $medium;
-                    font-size: 26px;
-                    line-height: 36px;
+                    font-weight: $semi-bold;
+                    font-size: 20px;
+                    line-height: 30px;
                     white-space: nowrap;
 
                     &::after {
                         content: "";
-                        width: 17%;
                         display: block;
                         height: 1px;
                         background-color: $primary;
                     }
-                }
 
-                @media(max-width:$media-sm) {
-                    width: 100%;
+                    @media(max-width:$media-xs) {
+                        font-size: 12px;
+                        line-height: 22px;
+                    }
                 }
             }
         }
