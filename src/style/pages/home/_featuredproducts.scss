@@ -1,4 +1,5 @@
 .featured-products {
+    padding-bottom: 200px;
     padding-top: 150px;
     overflow-x: hidden;
 
@@ -31,12 +32,16 @@
 
 
             .featured-slider-grid {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                overflow-x: scroll;
                 // display: grid;
                 // gap: 50px;
                 margin-left: -25px;
                 margin-right: -25px;
 
                 .featured-slider-list {
+
                     padding-left: 25px;
                     padding-right: 25px;
 

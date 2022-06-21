@@ -127,9 +127,9 @@ footer {
                             transition: 0.3s ease;
                             white-space: nowrap;
 
-                            &:hover {
-                                color: $white;
-                            }
+                            // &:hover {
+                            //     color: $white;
+                            // }
 
                             @media(max-width:$media-xs) {
                                 font-size: 11px;
@@ -227,9 +227,9 @@ footer {
                         color: #99ABBA;
                         transition: 0.3s ease;
 
-                        &:hover {
-                            color: $white;
-                        }
+                        // &:hover {
+                        //     color: $white;
+                        // }
                     }
 
                     @media(max-width:$media-sm) {
@@ -301,7 +301,7 @@ footer {
         img {
             transform: rotate(180deg);
             transition: 0.5s ease;
-            width: 60px;
+            width: 50px;
 
             &:hover {
                 transform: rotate(0deg);

@@ -24,13 +24,13 @@
         display: flex;
 
         .slick-prev {
-            display: none;
+            display: none !important;
 
 
         }
 
         .slick-next {
-            display: none;
+            display: none !important;
         }
 
         .engineering_services-image--grid {
@@ -39,7 +39,7 @@
             display: flex;
             justify-content: space-between;
 
-            a {
+            .service-block {
                 .image--zoom {
                     img {
                         width: 432px;
@@ -112,13 +112,13 @@
 
         .engineering_services-image--sliding {
             .slick-prev {
-                display: none;
+                display: none !important;
 
 
             }
 
             .slick-next {
-                display: none;
+                display: none !important;
             }
         }
     }
@@ -131,13 +131,13 @@
 
         .engineering_services-image--sliding {
             .slick-prev {
-                display: none;
+                display: none !important;
 
 
             }
 
             .slick-next {
-                display: none;
+                display: none !important;
             }
         }
     }
@@ -151,13 +151,13 @@
 
         .engineering_services-image--sliding {
             .slick-prev {
-                display: none;
+                display: none !important;
 
 
             }
 
             .slick-next {
-                display: none;
+                display: none !important;
             }
         }
     }
@@ -171,13 +171,13 @@
 
         .engineering_services-image--sliding {
             .slick-prev {
-                display: none;
+                display: none !important;
 
 
             }
 
             .slick-next {
-                display: none;
+                display: none !important;
             }
         }
     }
@@ -185,23 +185,25 @@
 }
 
 @media(max-width: $media-xs) {
-
     .banner-engineering-services {
         .engineering_services-heading {
             font-size: 15px;
         }
 
         .engineering_services-image--sliding {
+            display: flex;
+
             .slick-prev {
-                display: none;
-
-
+                display: none !important;
             }
 
             .slick-next {
-                display: none;
+                display: none !important;
+            }
+
+            .slick-list.draggable {
+                height: 400px;
             }
         }
     }
-
 }

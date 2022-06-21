@@ -2,31 +2,29 @@
     width: 100%;
     height: 100vh;
     background-color: $secondary;
-    background-image: url('/static/img/graphics.png');
-    background-size: 1420px;
+    background-image: url('/static/img/hero-image.png');
+    background-size: 700px;
     background-repeat: no-repeat;
-    background-position: 272% 30%;
+    background-position: right;
+    padding-top: 80px;
     // background-attachment: fixed;
 
 
-    @media(max-width: $media-xlg) {
-        height: 100vh;
-        background-position: 184% 30%;
-        background-size: 850px;
-    }
 
-    @media(max-width:$media-lg) {
-        background-position: 240% 30%;
+    @media(max-width:$media-xlg) {
+        background-image: url('/static/img/hero-image-mobile.png');
+        background-size: 380px;
     }
 
     @media(max-width: $media-sm) {
-        background-position: 348% 30%;
-        background-size: 620px;
+        background-position: right;
+        background-size: 192px;
     }
 
     @media(max-width:$media-xs) {
-        height: 90vh;
-        background-position: -130% 30%;
+        padding-top: 90px;
+        background-position: 115% 40%;
+        height: 95vh;
     }
 
     .container-alpha {
@@ -82,7 +80,7 @@
 
             .target {
                 width: 1024px;
-                border-top: 1px solid $white;
+                border-top: 1px solid #c1cad181;
 
                 @media(max-width: $media-xlg) {
                     width: 924px;
@@ -93,6 +91,7 @@
                 }
 
                 @media(max-width:$media-sm) {
+                    padding-bottom: 50px;
                     width: 100%;
                 }
 
@@ -161,11 +160,11 @@
 
             .downarrow-link {
                 position: absolute;
-                bottom: 90px;
+                bottom: 100px;
                 right: 0;
 
                 .downarrow {
-                    width: 60px;
+                    width: 50px;
                     transition: 0.5s ease;
 
                     &:hover {

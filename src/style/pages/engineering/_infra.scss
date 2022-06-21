@@ -2,6 +2,10 @@
     padding-top: 200px;
     width: 100%;
 
+    @media(max-width:$media-md) {
+        padding-top: 00px;
+    }
+
     .container-alpha {
         .Infra-heading_discription {
             // padding-top: 139px;
@@ -38,7 +42,7 @@
 
         .container-alpha {
             .Infra-heading_discription {
-
+                padding-top: 50px;
 
                 h3 {
                     font-size: 15px;
