@@ -1,0 +1,220 @@
+.banner-engineering-services {
+    // width: 100%;
+    height: auto;
+    // overflow: hidden;
+
+
+    .engineering-services__image--sliding {
+        padding-top: 66px;
+        display: flex;
+
+        .slick-prev {
+            display: none !important;
+
+
+        }
+
+        .slick-next {
+            display: none !important;
+        }
+
+        .picture-caption__slick-slider {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+
+            .picture__slider--zoom {
+                img {
+                    width: 432px;
+                    height: 319px;
+                }
+            }
+
+            .picture__caption-arrow {
+                display: flex;
+                justify-content: space-between;
+                height: 89px;
+                width: 432px;
+                align-items: center;
+                background: #EFF0F0 0% 0% no-repeat padding-box;
+
+                h6 {
+                    padding-left: 30px;
+                    font-size: 18px;
+                    letter-spacing: 0px;
+                    color: $primary;
+                    font-family: $font-1;
+                    font-weight: $bold;
+                }
+
+
+                .image_slider--size {
+                    padding-right: 30px;
+
+
+                }
+
+            }
+
+        }
+
+    }
+
+
+}
+
+
+
+
+.picture__slider--zoom:hover img {
+    transform: scale(1.5);
+
+}
+
+.picture__slider--zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.picture__slider--zoom {
+    width: 432px;
+    height: 319px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.slick-list.draggable {
+    height: 400px;
+}
+
+
+
+@media(max-width: $media-md) {
+    .banner-engineering-services {
+
+
+        .engineering-services__image--sliding {
+            .slick-prev {
+                display: none;
+
+
+            }
+
+            .slick-next {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media(max-width: $media-xlg) {
+    .banner-engineering-services {
+
+
+        .engineering-services__image--sliding {
+            .slick-prev {
+                display: none;
+
+
+            }
+
+            .slick-next {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media(max-width: $media-lg) {
+
+    .banner-engineering-services {
+
+
+        .engineering-services__image--sliding {
+            .slick-prev {
+                display: none;
+
+
+            }
+
+            .slick-next {
+                display: none;
+            }
+
+            .picture-caption__slick-slider {
+                display: flex;
+                justify-content: space-between;
+
+
+                .picture__slider--zoom {
+                    img {
+                        width: 432px;
+                        height: 319px;
+                    }
+                }
+
+                .picture__caption-arrow {
+                    height: 89px;
+                    width: 432px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    background: #EFF0F0 0% 0% no-repeat padding-box;
+
+                    h6 {
+                        padding-left: 30px;
+                        font-size: 18px;
+                        letter-spacing: 0px;
+                        color: $primary;
+                        font-family: $font-1;
+                        font-weight: $bold;
+                    }
+
+                }
+            }
+
+        }
+    }
+}
+
+@media(max-width: $media-md) {
+
+    .banner-engineering-services {
+
+
+        .engineering-services__image--sliding {
+            .slick-prev {
+                display: none;
+
+
+            }
+
+            .slick-next {
+                display: none;
+            }
+        }
+    }
+
+}
+
+@media(max-width: $media-xs) {
+
+    .banner-engineering-services {
+
+
+        .engineering-services__image--sliding {
+            .slick-prev {
+                display: none;
+
+
+            }
+
+            .slick-next {
+                display: none;
+            }
+        }
+    }
+
+}

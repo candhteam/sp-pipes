@@ -1,0 +1,102 @@
+.banner__our-client {
+    width: 100%;
+    height: auto;
+
+    .container-alpha {
+        padding-bottom: 150px;
+
+        .our-client__heading {
+            padding-top: 94px;
+            padding-bottom: 29px;
+
+            h5 {
+                text-align: left;
+                font-weight: $bold;
+                font-family: $font-1;
+                color: $primary;
+                opacity: 1;
+                font-size: 30px;
+
+            }
+
+        }
+
+        .our-clients__list--flex {
+            display: flex;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            background: #FFFFFF 0% 0% no-repeat padding-box;
+            border: 1px solid #C1CAD1;
+            border-radius: 5px;
+            opacity: 1;
+            text-align: center;
+            align-items: center;
+            height: 150px;
+
+            img {
+                background: #FFFFFF 0% 0% no-repeat padding-box;
+                border-right: 1px solid #C1CAD1;
+                padding: 10px;
+
+                &:nth-child(6) {
+                    border: none;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media(max-width:$media-md) {
+    .banner__our-client {
+        .container-alpha {
+            .our-clients__list--flex {
+                display: grid;
+                grid-template-columns: repeat(3, 1fr);
+                row-gap: 15px;
+                height: 200px;
+            }
+
+
+        }
+    }
+}
+
+@media(max-width:$media-xs) {
+    .banner__our-client {
+        .container-alpha {
+            .our-clients__list--flex {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+
+
+                img {
+                    border: none;
+                }
+
+
+            }
+        }
+    }
+}
+
+@media(max-width: $media-lg) {
+    .banner__our-client {
+        .container-alpha {
+            .our-clients__list--flex {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                column-gap: 40px;
+                width: 100%;
+                height: 290px;
+
+                img {
+                    border: none;
+                }
+
+
+            }
+        }
+    }
+}
